@@ -54,17 +54,22 @@
        url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.svg#NotoSans') format('svg');
 }
 
-#header-bar {
-    background-color: black;
+
+.navbar-default {
+    background-color: rgba(000,000,000,0.65);
 }
 
 #ratemyroof-title {
-    color: aliceblue;
+    color: floralwhite;
 }
 
 body {
     background-color: #b84d45;
     background-image: url(/../images/classy-fabric.png);
+}
+
+.navbar{
+    border: none;
 }
 
 /*body {
