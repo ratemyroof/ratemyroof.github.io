@@ -54,7 +54,23 @@
        url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.svg#NotoSans') format('svg');
 }
 /*
+=======
+
+#header-bar {
+    background-color: black;
+}
+
+#ratemyroof-title {
+    color: aliceblue;
+}
+
+>>>>>>> e1264b536406d8e7c87be2e02858809ff1032019
 body {
+    background-color: #b84d45;
+    background-image: url(/../images/classy-fabric.png);
+}
+
+/*body {
   background-color: #fff;
   padding:50px;
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
