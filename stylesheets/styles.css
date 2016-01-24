@@ -59,8 +59,19 @@
     background-color: rgba(000,000,000,0.65);
 }
 
+.form-group{
+    position: absolute;
+    top: 0;
+    padding-top:23px;
+    right:0;
+    padding-right: 45px;
+    width: 500px;
+}
+
 #ratemyroof-title {
     color: floralwhite;
+    padding-bottom: 10px;
+    
 }
 
 body {
