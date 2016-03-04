@@ -16,7 +16,7 @@
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="./javascripts/ratemyroof.js"></script>
+    
     <!-- Firebase -->
     <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
     <!-- jQuery -->
@@ -35,7 +35,7 @@
       <div class="row navbar-height">
         <nav class="navbar navbar-default navbar-fixed-top">
           <div id="header-bar" class="container-fluid">
-            <h1 class="icon-heading">Ratemyroof</h1>
+            <h1 class="icon-heading" id="rmrTitle">Ratemyroof</h1>
             <div class="form-group pull-right">
                 <div id="searchBox">
                     <input id ="searchInput" type="text" class="form-control transparent-input" placeholder="Search" autofocus>
@@ -46,20 +46,20 @@
             </div>
         </nav>
       </div>
-      <div class="row">
-        <div class="col-sm-4 homepage-icons">
+      <div class="row" id="homepageButtons">
+        <div class="col-sm-6 homepage-icons">
           <div class="col-sm-12">
           <i class="fa fa-home fa-5x home-icon"></i>
         </div>
         <div class="col-sm-12 icon-heading">Find a Roof</div>
         </div>
-        <div class="col-sm-4 homepage-icons">
+        <!--<div class="col-sm-4 homepage-icons">
           <div class='col-sm-12'>
           <i class="fa fa-user fa-5x landlord-icon"></i>
         </div>
         <div class='col-sm-12 icon-heading'>Find a Landlord</div>
-        </div>
-        <div class="col-sm-4 homepage-icons">
+        </div>-->
+        <div class="col-sm-6 homepage-icons">
           <div class='col-sm-12'>
             <a href="./Ratemyroof.html">
           <i class="fa fa-star fa-5x rate-icon"></i></a>
@@ -81,6 +81,7 @@
     </footer>
     <!-- OUR SCRIPTS -->
         <script src="javascripts/ratemyroof.js"></script>
+        <script src="./javascripts/ratemyroof.js"></script>
         
   </body>
 </html>
