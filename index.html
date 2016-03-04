@@ -5,35 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ratemyroof</title>
-
-
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <!--<meta name="viewport" content="width=device-width">-->
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+
+    <script src="./javascripts/ratemyroof.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
   </head>
   <body>
     <div class="container">
-      <header>
+      <div class="row navbar-height">
         <nav class="navbar navbar-default navbar-fixed-top">
           <div id="header-bar" class="container-fluid">
-            <h1 id="ratemyroof-title">ratemyroof</h1>
+            <h1 class="icon-heading">Ratemyroof</h1>
             <div class="form-group pull-right">
-                <input type="text" class="form-control" placeholder="Search">
+                <input type="text" class="form-control transparent-input" placeholder="Search" autofocus>
             </div>
             </div>
         </nav>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 homepage-icons">
+          <div class="col-sm-12">
+          <i class="fa fa-home fa-5x home-icon"></i>
+        </div>
+        <div class="col-sm-12 icon-heading">Find a Roof</div>
+        </div>
+        <div class="col-sm-4 homepage-icons">
+          <div class='col-sm-12'>
+          <i class="fa fa-user fa-5x landlord-icon"></i>
+        </div>
+        <div class='col-sm-12 icon-heading'>Find a Landlord</div>
+        </div>
+        <div class="col-sm-4 homepage-icons">
+          <div class='col-sm-12'>
+            <!--<a href="./Ratemyroof.html">-->
+          <i class="fa fa-star fa-5x rate-icon"></i><!--</a>-->
+        </div>
+          <div class='col-sm-12 icon-heading'>Rate My Roof</div>
+        </div>
+      </div>
+    </div>
       </header>
-      <section>
-
-
-
     <footer id="footer-bar">
         <div id="footer-links">
             <ul id="each-link">
