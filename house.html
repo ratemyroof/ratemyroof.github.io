@@ -4,80 +4,80 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ratemyroof - Find a house</title>
+    <title>ratemyroof</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <!-- Compiled and minified CSS -->
+
+    <script src="./javascripts/ratemyroof.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+    <script src="./javascripts/ratemyroof.js"></script>
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+ <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-
   </head>
   <body>
-      <header>
-        <nav class="navbar navbar-default navbar-fixed-top">
-          <div id="header-bar" class="container-fluid">
-            <h1 id="ratemyroof-title">ratemyroof</h1>
-            <div class="form-group pull-right">
-                <input type="text" class="form-control" placeholder="Search">
-            </div>
-            </div>
-        </nav>
-      </header>
+ 
       
-    <div class="container" id="content" style="margin-top: 130px">
-            <div class="row">
-                <form action="#">
-                    <p class="col-md-3">
-                        Accomodation type:
-                    </p>
-                    <p class="col-md-2">
-                      <input type="checkbox" id="test5" />
-                      <label for="test5">Apartment</label>
-                    </p>
-                    <p class="col-md-2">
-                      <input type="checkbox" id="test6" />
-                      <label for="test6">House</label>
-                    </p>
-                  </form>
-            </div>
-            <div class="row">
-                <form action="#">
-                    <p class="col-md-3">
-                        Number of rooms:
-                    </p>
-                    <p class="col-md-2">
-                      <input type="checkbox" id="test7" />
-                      <label for="test7">1</label>
-                    </p>
-                    <p class="col-md-2">
-                      <input type="checkbox" id="test8" />
-                      <label for="test8">House</label>
-                    </p>
-                  </form>
-            </div>
-            <div class="row">
-                <form action="#">
-                    <p class="col-md-3">
-                        Accomodation type:
-                    </p>
-                    <p class="col-md-2">
-                      <input type="checkbox" id="test5" />
-                      <label for="test5">Apartment</label>
-                    </p>
-                    <p class="col-md-2">
-                      <input type="checkbox" id="test6" />
-                      <label for="test6">House</label>
-                    </p>
-                  </form>
-            </div>
-      </div>
+      <div class="container">
+          <div class="row" id="filter-row">
+              <div class="col s2">Type of accomodation:</div>
+              <div class="col s2">
+                <input type="checkbox" id="accomodation-house" />
+                <label for="accomodation-house">House</label>
+              </div>
+              <div class="col s2">
+                <input type="checkbox" id="accomodation-apartment" />
+                <label for="accomodation-apartment">Apartment</label>
+              </div>
+          </div>
+          <div class="row" id="filter-row">
+              <div class="col s2">Room Specifications:</div>
+                <div class="input-field col s3">
+                     <select class="input-field">
+                        <option value="" disabled selected>Number of rooms</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="input-field col s3">
+                     <select class="input-field">
+                        <option value="" disabled selected>Number of Bathrooms</option>
+                        <option value="1">1</option>
+                        <option value="2">1.5</option>
+                        <option value="3">2</option>
+                    </select>
+                </div>
+          </div>
+          <div class="row" id="filter-row">
+              <div class="col s2">Management</div>
+              <div class="col s2">
+                <input type="checkbox" id="domus" />
+                <label for="domus">Domus</label>
+              </div>
+              <div class="col s2">
+                <input type="checkbox" id="kw4rent" />
+                <label for="kw4rent">KW4Rent</label>
+              </div>
+          </div>
+     </div>
         
+         
     <footer id="footer-bar">
         <div id="footer-links">
             <ul id="each-link">
@@ -88,5 +88,6 @@
             </ul>  
         </div>  
     </footer>
+    <script src="javascripts/ratemyroof.js"></script>
   </body>
 </html>
