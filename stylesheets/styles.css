@@ -29,14 +29,15 @@
 .main-title-font{
   font-family: 'Pacifico', cursive !;
 }
-.navbar-default {
-    background-color: rgba(000,000,000,0.65);
-}
+/*.navbar-default {
+    background-color: rgba(000,000,000,0.35);
+    height: 100px;
+}*/
 
 .form-group{
     position: absolute;
     top: 0;
-    padding-top:16px;
+    padding-top:23px;
     right:0;
     padding-right: 45px;
     width: 500px;
@@ -48,23 +49,27 @@
     border: none;
     height: 50px;
     color: white;
-    font-size: 21px;
+    font-size: 20px;
+    position: inline;
 }
 
-#ratemyroof-title {
-    color: floralwhite;
+#rmrTitle {
+    /*color: floralwhite;*/
+    position: inline;
     padding-bottom: 10px;
     font-family: 'Pacifico', cursive;
+    font-size: 50px;
 
 }
 
 body {
-    background-color: #b84d45;
-    background-image: url(../images/classy-fabric.png);
+    /*background-color: #b84d45;*/
+    background-color: white;
+    /*background-image: url(../images/classy-fabric.png);*/
 }
-.navbar{
+/*.navbar{
     border: none;
-}
+}*/
 
 footer {
     display: block;
@@ -114,15 +119,20 @@ li {
 }
 
 .home-icon{
-  font-size: 200px !important;
+    font-size: 200px !important;
+    color: #26A69A;
+    position: relative;
+
 }
 
 .landlord-icon{
   font-size: 200px !important;
+    color: #e62739;
 }
 
 .rate-icon{
   font-size: 200px !important;
+    color: #e62739;
 }
 .homepage-icons{
   text-align: center;
@@ -130,4 +140,8 @@ li {
 .icon-heading{
   font-family: 'Lobster', cursive;
   font-size: 30px;
+}
+
+#homepageButtons {
+    padding-top: 70px;
 }
