@@ -13,6 +13,10 @@
     <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="./javascripts/ratemyroof.js"></script>
   </head>
@@ -22,34 +26,39 @@
         <nav class="navbar navbar-default navbar-fixed-top">
           <div id="header-bar" class="container-fluid">
             <h1 class="icon-heading">Ratemyroof</h1>
-            <div class="form-group pull-right">
-                <input type="text" class="form-control transparent-input" placeholder="Search" autofocus>
-            </div>
             </div>
         </nav>
       </div>
       <div class="row">
-        <div class="col-sm-4 homepage-icons">
-          <div class="col-sm-12">
-          <i class="fa fa-home fa-5x home-icon"></i>
+        <div class="input-field col s6">
+          <input placeholder="What is your street number" id="street_number" type="text" class="validate">
+          <label for="street_number">Street Number</label>
         </div>
-        <div class="col-sm-12 icon-heading">Find a Roof</div>
-        </div>
-        <div class="col-sm-4 homepage-icons">
-          <div class='col-sm-12'>
-          <i class="fa fa-user fa-5x landlord-icon"></i>
-        </div>
-        <div class='col-sm-12 icon-heading'>Find a Landlord</div>
-        </div>
-        <div class="col-sm-4 homepage-icons">
-          <div class='col-sm-12'>
-          <i class="fa fa-star fa-5x rate-icon"></i>
-        </div>
-          <div class='col-sm-12 icon-heading'>Rate My Roof</div>
+        <div class="input-field col s6">
+          <input placeholder="What is your street Name" id="street_name" type="text" class="validate">
+          <label for="street_name">Street Name</label>
         </div>
       </div>
-    </div>
-      </header>
+      <div class='row'>
+        <div class="input-field col s6">
+          <input placeholder="landlord name/ leasing company" id="landlord/leasaingcompany" type="text" class="validate">
+          <label for="landlord/leasingcompany">Landlord or Leasing copmany</label>
+        </div>
+        <div class="input-field col s3">
+          <select class="input-field">
+            <option value="" disabled selected>Number of Bathrooms</option>
+            <option value="1">1</option>
+            <option value="2">1.5</option>
+            <option value="3">2</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <button class="btn waves-effect waves-light" name="action" onClick="createProperty()">Submit
+          </button>
+      </div>
+
+      </div>
     <footer id="footer-bar">
         <div id="footer-links">
             <ul id="each-link">
