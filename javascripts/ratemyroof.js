@@ -1,30 +1,19 @@
-$(".dropdown-menu li a").click(function(){
-  $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
-  $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
-});
-
 $(document).ready(function() {
     $('select').material_select();
 });
-
-
 
 var myFirebaseRef = new Firebase("https://ratemyroof.firebaseio.com/");
 
 function createProperty(){
   var street_number = document.getElementById("street_number");
   var street_name = document.getElementById("street_name");
+  var num_bathrooms = document.getElementById("rate_num_bathrooms");
   console.log(street_number);
   console.log(street_name);
   var property_name = street_number.value + street_name.value
   myFirebaseRef.push({
     'streetNumber': street_number.value,
     'streetName': street_name.value,
-    'location': {
-      city: "San Francisco",
-      state: "California",
-      zip: 94103
-    }
   });
   myFirebaseRef.child("location/city").on("value", function(snapshot) {
     alert(snapshot.val());  // Alerts "San Francisco"
@@ -72,7 +61,7 @@ usersRef.set({
     }
 });
 
-var Firebase = require("firebase");
+/*var Firebase = require("firebase");*/
 var rootRef = new Firebase('https://resplendent-inferno-8914.firebaseio.com/');
 
 /*rootRef.orderByKey().on("child_added", function(snapshot){
