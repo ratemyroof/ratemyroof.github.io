@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ratemyroof</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+    <script src="./javascripts/ratemyroof.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row navbar-height">
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div id="header-bar" class="container-fluid">
+            <h1 class="icon-heading">Ratemyroof</h1>
+            </div>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="What is your street number" id="street_number" type="text" class="validate">
+          <label for="street_number">Street Number</label>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="What is your street Name" id="street_name" type="text" class="validate">
+          <label for="street_name">Street Name</label>
+        </div>
+      </div>
+      <div class='row'>
+        <div class="input-field col s6">
+          <input placeholder="landlord name/ leasing company" id="landlord/leasaingcompany" type="text" class="validate">
+          <label for="landlord/leasingcompany">Landlord or Leasing copmany</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s3">
+          <select class="input-field" id="rate_num_bathrooms">
+            <option value="" disabled selected>Number of Bathrooms</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <label>Number of Bathrooms</label>
+        </div>
+      </div>
+      <div class="row">
+        <button class="btn waves-effect waves-light" name="action" onClick="createProperty()">Submit
+          </button>
+      </div>
+
+      </div>
+    <footer id="footer-bar">
+        <div id="footer-links">
+            <ul id="each-link">
+                <li><a href="about.html"><i class="fa fa-users"></i> About us</a></li>
+                <li><a href="www.github.com/ratemyroof"><i class="fa fa-github-square"></i> Github </a></li>
+                <li><a href="www.twitter.com/theduaayousif"><i class="fa fa-twitter"></i> Twitter </a></li>
+                <li><a href="www.facebook.com"><i class="fa fa-facebook"></i> Facebook </a></li>
+            </ul>
+        </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ratemyroof</title>
+  
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+
+    <script src="./javascripts/ratemyroof.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+    <script src="./javascripts/ratemyroof.js"></script>
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+ <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  </head>
+  <body>
+      <nav>
+    <div class="nav-wrapper">
+      <h1 class="icon-heading" id="rmrTitle">Ratemyroof</h1>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+        <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+        <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+        <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+      </ul>
+    </div>
+  </nav>
+ 
+      
+      <div class="container">
+          <div class="row" id="filter-row">
+              <div class="col s3">Type of accomodation:</div>
+              <div class="col s3">
+                <input type="checkbox" id="accomodation_house" />
+                <label for="accomodation_house">House</label>
+              </div>
+              <div class="col s3">
+                <input type="checkbox" id="accomodation_apartment" />
+                <label for="accomodation_apartment">Apartment</label>
+              </div>
+          </div>
+          <div class="row" id="filter-row">
+              <div class="col s3">Room Specifications:</div>
+                <div class="input-field col s3">
+                  <select>
+                    <option value="" disabled selected>Number of Bathrooms</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                  </select>
+                  <label>Number of Bathrooms</label>
+                </div>
+                <div class="input-field col s3">
+                  <select>
+                    <option value="" disabled selected>Number of Bathrooms</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                  </select>
+                  <label>Number of Bathrooms</label>
+                </div>
+          </div>
+          <div class="row" id="filter-row">
+              <div class="col s3">Management:</div>
+              <div class="col s3">
+                <input type="checkbox" id="domus" />
+                <label for="domus">Domus</label>
+              </div>
+              <div class="col s3">
+                <input type="checkbox" id="kw4rent" />
+                <label for="kw4rent">KW4Rent</label>
+              </div>
+          </div>
+     </div>
+        
+         
+    <footer id="footer-bar">
+        <div id="footer-links">
+            <ul id="each-link">
+                <li><a href="about.html"><i class="fa fa-users"></i> About us</a></li>
+                <li><a href="www.github.com/ratemyroof"><i class="fa fa-github-square"></i> Github </a></li>
+                <li><a href="www.twitter.com/theduaayousif"><i class="fa fa-twitter"></i> Twitter </a></li>
+                <li><a href="www.facebook.com"><i class="fa fa-facebook"></i> Facebook </a></li>
+            </ul>  
+        </div>  
+    </footer>
+    <script src="javascripts/ratemyroof.js"></script>
+  </body>
+</html>
