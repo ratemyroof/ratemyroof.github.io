@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
     $('select').material_select();
 });
 
@@ -19,7 +19,7 @@ function createProperty(){
     alert(snapshot.val());  // Alerts "San Francisco"
   });
   alert('saved')
-}
+}*/
 
 /*var myFirebaseRef = new Firebase("https://ratemyroof.firebaseio.com/");
 myFirebaseRef.set({
@@ -39,10 +39,10 @@ myFirebaseRef.child("location/city").on("value", function(snapshot) {
 
 //var Firebase = require("firebase");
 
-$(window).load(function(){
+/*$(window).load(function(){
    var optionsList = document.getElementById('searchDownbar'); 
     console.log(optionsList);
-});
+});*/
 
 var rootRef = new Firebase('https://testingforrmr.firebaseio.com/');
 var usersRef = rootRef.child("testing properties");
@@ -62,7 +62,7 @@ usersRef.set({
 });
 
 /*var Firebase = require("firebase");*/
-var rootRef = new Firebase('https://resplendent-inferno-8914.firebaseio.com/');
+/*var rootRef = new Firebase('https://resplendent-inferno-8914.firebaseio.com/');*/
 
 /*rootRef.orderByKey().on("child_added", function(snapshot){
     snapshot.forEach(function(data){
@@ -109,11 +109,11 @@ $('#searchInput').bind('input propertychange', function(){
           var altNames = false;
           if(passself.model.buildingsList[k]){
             for(var a = 0; a < passself.model.buildingsList[k].alternateNames.length; a++){
-            if(regex.test(passself.model.buildingsList[k].alternateNames[a])){
-              altNames = true;
-              break;
+              if(regex.test(passself.model.buildingsList[k].alternateNames[a])){
+                altNames = true;
+                break;
+              }
             }
-          }*/
           //console.log(passself.model.buildingsList[k].name);
           //console.log(regex);
           //console.log(passself.model.buildingsList[k].name);
@@ -121,17 +121,17 @@ $('#searchInput').bind('input propertychange', function(){
           /*if(!(regex.test(passself.model.buildingsList[k].name))&& 
               !(regex.test(passself.model.buildingsList[k].code))&&
               !(regex.test(passself.model.buildingsList[k].parentName)) &&
-              !altNames) {*/
+              !altNames) {
             //console.log('in if');
             //var noMatch = document.getElementById('listID'+k);
             //console.log(noMatch);
             //noMatch.className = 'hidden';
-          /*}
+          }
           else {
             altNames = false;
             var match = document.getElementById('listID'+k);
             match.className = 'list-group-item';
-          }*/
-        }
-      );
+          }
+        }*/
+      });
 
