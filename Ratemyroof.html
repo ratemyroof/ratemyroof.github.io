@@ -25,7 +25,14 @@
       <div class="row navbar-height">
         <nav class="navbar navbar-default navbar-fixed-top">
           <div id="header-bar" class="container-fluid">
-            <h1 class="icon-heading">Ratemyroof</h1>
+            <h1 class="icon-heading" id="rmrTitle">Ratemyroof</h1>
+            <div class="form-group pull-right">
+                <div id="searchBox">
+                    <input id ="searchInput" type="search" class="form-control transparent-input" placeholder="Search" onsearch="searchFunction()"autofocus>
+                    <ul class="list-group" id="searchDownbar">
+                    </ul>
+                </div>
+            </div>
             </div>
         </nav>
       </div>
@@ -51,7 +58,6 @@
             <option value="2">1.5</option>
             <option value="3">2</option>
           </select>
-        </div>
       </div>
       <div class="row">
         <button class="btn waves-effect waves-light" name="action" onClick="createProperty()">Submit

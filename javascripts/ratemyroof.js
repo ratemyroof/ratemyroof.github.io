@@ -20,66 +20,33 @@ function createProperty(){
   myFirebaseRef.push({
     'streetNumber': street_number.value,
     'streetName': street_name.value,
-    'location': {
-      city: "San Francisco",
-      state: "California",
-      zip: 94103
-    }
   });
-  myFirebaseRef.child("location/city").on("value", function(snapshot) {
+  myFirebaseRef.child("streetName").on("value", function(snapshot) {
     alert(snapshot.val());  // Alerts "San Francisco"
   });
   alert('saved')
 }
 
-/*var myFirebaseRef = new Firebase("https://ratemyroof.firebaseio.com/");
-myFirebaseRef.set({
-  title: "Hello World!",
-  author: "Firebase",
-  location: {
-    city: "San Francisco",
-    state: "California",
-    zip: 94103
-  }
-});
+//This is to search for houses
+function searchFunction(){
+  var search = document.getElementById('searchInput');
+  console.log(search.value);
+    myFirebaseRef.orderByChild("streetName").equalTo(search.value).on("child_added", function(snapshot) {
+    console.log(data);
+    var data = snapshot.val()
+    alert(data.streetNumber);
+  });
+}
 
-myFirebaseRef.child("location/city").on("value", function(snapshot) {
-  alert(snapshot.val());  // Alerts "San Francisco"
-});*/
+function showSearchResults(){
 
+}
 
-//var Firebase = require("firebase");
 
 $(window).load(function(){
-   var optionsList = document.getElementById('searchDownbar'); 
+   var optionsList = document.getElementById('searchDownbar');
     console.log(optionsList);
 });
-
-var rootRef = new Firebase('https://testingforrmr.firebaseio.com/');
-var usersRef = rootRef.child("testing properties");
-usersRef.set({
-    property1: {
-        address: "261 Lester Street",
-        management: "KW4Rent"
-    },
-    property2:{
-        address: "333 Lester Street",
-        management: "BH Properties"
-    },
-    property3: {
-        address: "336 Spruce Street",
-        management: "Domus Housing"
-    }
-});
-
-var Firebase = require("firebase");
-var rootRef = new Firebase('https://resplendent-inferno-8914.firebaseio.com/');
-
-/*rootRef.orderByKey().on("child_added", function(snapshot){
-    snapshot.forEach(function(data){
-        
-    });
-});*/
 
 $('#searchInput').bind('input propertychange', function(){
         console.log("in funciton");
@@ -114,35 +81,5 @@ $('#searchInput').bind('input propertychange', function(){
                 //console.log(data.val().address);
             });
         });
-        //console.log(passself.model.buildingsList);
-        //console.log(passself.model);
-        /*for(var k=0; k < passself.model.buildingsList.length; k++){
-          var altNames = false;
-          if(passself.model.buildingsList[k]){
-            for(var a = 0; a < passself.model.buildingsList[k].alternateNames.length; a++){
-            if(regex.test(passself.model.buildingsList[k].alternateNames[a])){
-              altNames = true;
-              break;
-            }
-          }*/
-          //console.log(passself.model.buildingsList[k].name);
-          //console.log(regex);
-          //console.log(passself.model.buildingsList[k].name);
-          //console.log(regex.test(passself.model.buildingsList[k].name));
-          /*if(!(regex.test(passself.model.buildingsList[k].name))&& 
-              !(regex.test(passself.model.buildingsList[k].code))&&
-              !(regex.test(passself.model.buildingsList[k].parentName)) &&
-              !altNames) {*/
-            //console.log('in if');
-            //var noMatch = document.getElementById('listID'+k);
-            //console.log(noMatch);
-            //noMatch.className = 'hidden';
-          /*}
-          else {
-            altNames = false;
-            var match = document.getElementById('listID'+k);
-            match.className = 'list-group-item';
-          }*/
         }
       );
-
