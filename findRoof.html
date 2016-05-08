@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ratemyroof</title>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -14,7 +14,7 @@
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   
 
     <script src="./javascripts/ratemyroof.js"></script>
 
@@ -47,43 +47,46 @@
       
       <div class="container">
           <div class="row" id="filter-row">
-              <div class="col s2">Type of accomodation:</div>
-              <div class="col s2">
+              <div class="col s3">Type of accomodation:</div>
+              <div class="col s3">
                 <input type="checkbox" id="accomodation_house" />
                 <label for="accomodation_house">House</label>
               </div>
-              <div class="col s2">
+              <div class="col s3">
                 <input type="checkbox" id="accomodation_apartment" />
                 <label for="accomodation_apartment">Apartment</label>
               </div>
           </div>
           <div class="row" id="filter-row">
-              <div class="col s2">Room Specifications:</div>
+              <div class="col s3">Room Specifications:</div>
                 <div class="input-field col s3">
-                     <select class="input-field">
-                        <option value="" disabled selected>Number of rooms</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
+                  <select>
+                    <option value="" disabled selected>Number of Bathrooms</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                  </select>
+                  <label>Number of Bathrooms</label>
                 </div>
                 <div class="input-field col s3">
                   <select>
-                    <option value="" disabled selected>Choose your option</option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
+                    <option value="" disabled selected>Number of Bathrooms</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
                   </select>
-                  <label>Materialize Select</label>
+                  <label>Number of Bathrooms</label>
                 </div>
           </div>
           <div class="row" id="filter-row">
-              <div class="col s2">Management</div>
-              <div class="col s2">
+              <div class="col s3">Management:</div>
+              <div class="col s3">
                 <input type="checkbox" id="domus" />
                 <label for="domus">Domus</label>
               </div>
-              <div class="col s2">
+              <div class="col s3">
                 <input type="checkbox" id="kw4rent" />
                 <label for="kw4rent">KW4Rent</label>
               </div>

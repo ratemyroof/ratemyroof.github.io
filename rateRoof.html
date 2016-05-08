@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ratemyroof</title>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -17,7 +16,7 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
  <!-- Compiled and minified JavaScript -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
     <script src="./javascripts/ratemyroof.js"></script>
   </head>
   <body>
@@ -51,13 +50,20 @@
           <input placeholder="landlord name/ leasing company" id="landlord/leasaingcompany" type="text" class="validate">
           <label for="landlord/leasingcompany">Landlord or Leasing copmany</label>
         </div>
+      </div>
+      <div class="row">
         <div class="input-field col s3">
-          <select class="input-field">
+          <select class="input-field" id="rate_num_bathrooms">
             <option value="" disabled selected>Number of Bathrooms</option>
             <option value="1">1</option>
-            <option value="2">1.5</option>
-            <option value="3">2</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
           </select>
+<<<<<<< HEAD:Ratemyroof.html
+=======
+          <label>Number of Bathrooms</label>
+        </div>
+>>>>>>> origin/master:rateRoof.html
       </div>
       <div class="row">
         <button class="btn waves-effect waves-light" name="action" onClick="createProperty()">Submit
