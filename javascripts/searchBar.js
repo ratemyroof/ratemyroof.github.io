@@ -37,18 +37,15 @@ function showSearchResults(){
 }
 
 
-<<<<<<< HEAD:javascripts/ratemyroof.js
 $(window).load(function(){
    var optionsList = document.getElementById('searchDownbar');
 =======
 /*$(window).load(function(){
-   var optionsList = document.getElementById('searchDownbar'); 
+   var optionsList = document.getElementById('searchDownbar');
 >>>>>>> origin/master:javascripts/searchBar.js
     console.log(optionsList);
 });*/
 
-<<<<<<< HEAD:javascripts/ratemyroof.js
-=======
 var rootRef = new Firebase('https://testingforrmr.firebaseio.com/');
 var usersRef = rootRef.child("testing properties");
 usersRef.set({
@@ -71,11 +68,10 @@ usersRef.set({
 
 /*rootRef.orderByKey().on("child_added", function(snapshot){
     snapshot.forEach(function(data){
-        
+
     });
 });*/
 
->>>>>>> origin/master:javascripts/searchBar.js
 $('#searchInput').bind('input propertychange', function(){
         console.log("in funciton");
         var inputVal = $(this).val();
@@ -109,10 +105,8 @@ $('#searchInput').bind('input propertychange', function(){
                 //console.log(data.val().address);
             });
         });
-<<<<<<< HEAD:javascripts/ratemyroof.js
         }
       );
-=======
         //console.log(passself.model.buildingsList);
         //console.log(passself.model);
         /*for(var k=0; k < passself.model.buildingsList.length; k++){
@@ -128,7 +122,7 @@ $('#searchInput').bind('input propertychange', function(){
           //console.log(regex);
           //console.log(passself.model.buildingsList[k].name);
           //console.log(regex.test(passself.model.buildingsList[k].name));
-          /*if(!(regex.test(passself.model.buildingsList[k].name))&& 
+          /*if(!(regex.test(passself.model.buildingsList[k].name))&&
               !(regex.test(passself.model.buildingsList[k].code))&&
               !(regex.test(passself.model.buildingsList[k].parentName)) &&
               !altNames) {
@@ -144,5 +138,3 @@ $('#searchInput').bind('input propertychange', function(){
           }
         }*/
       });
-
->>>>>>> origin/master:javascripts/searchBar.js
